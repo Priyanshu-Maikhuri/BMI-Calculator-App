@@ -26,9 +26,11 @@ class InputFields extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               TextField(decoration: InputDecoration(labelText: 'Weight (in kg)'),
-                controller: weight,),
+                controller: weight,
+                keyboardType: TextInputType.number,),
               TextField(decoration: InputDecoration(labelText: 'Height (in cm)'),
-                controller: height,),
+                controller: height,
+                keyboardType: TextInputType.number,),
             ],
           ),   
         ),
